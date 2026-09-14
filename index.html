@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Style — modern fashion for everyday confidence.">
+    <title>Urban Style | Modern Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon (2).png">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <a class="brand" href="index.html" aria-label="Urban Style home">
+            <span>URBAN</span> STYLE
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="index.html" data-page="home">Home</a>
+            <a href="products.html" data-page="collection">Collection</a>
+            <a href="about.html" data-page="about">Our Story</a>
+            <a href="reviews.html" data-page="reviews">Reviews</a>
+            <a href="contact.html" data-page="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="cartButton" aria-label="Open shopping bag">
+                <span class="bag-icon">♧</span>
+                <span>Bag</span>
+                <b id="cartCount">0</b>
+            </button>
+            <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Collection</a>
+        <a href="about.html">Our Story</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <!-- Add  video here:
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+            <source src="videos/hero.mp4" type="video/mp4">
+        </video>
+        -->
+            <div class="hero-backdrop"></div>
+            <div class="hero-grain"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">THE NEW URBAN EDIT</p>
+                <h1>Wear your<br><em>confidence.</em></h1>
+                <p class="hero-copy">Modern essentials, statement pieces and everyday classics made to move with you.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-light" href="products.html">Shop collection <span>→</span></a>
+                    <a class="text-link light-link" href="about.html">Discover our story <span>↗</span></a>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>NEW SEASON / 2026</span>
+                <span class="scroll-note">Scroll to explore ↓</span>
+            </div>
+        </section>
+
+        <section class="intro section">
+            <div class="intro-label">01 / THE COLLECTION</div>
+            <div>
+                <h2>Style that feels<br><em>like you.</em></h2>
+                <p>Thoughtful pieces for workdays, weekends and everything in between. Clean silhouettes, comfortable
+                    fabrics and details that make an impression.</p>
+            </div>
+        </section>
+
+        <section class="collection section" id="collection">
+            <div class="section-top">
+                <div>
+                    <p class="eyebrow dark">CURATED FOR YOU</p>
+                    <h2>Featured pieces</h2>
+                </div>
+                <a class="text-link dark-link" href="products.html">View all products <span>↗</span></a>
+            </div>
+
+            <div class="filter-row" role="group" aria-label="Product categories">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="shirts">Shirts</button>
+                <button class="filter" data-filter="trousers">Trousers</button>
+                <button class="filter" data-filter="shoes">Shoes</button>
+                <button class="filter" data-filter="women">Women</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-category="shirts">
+                    <a href="products.html" class="product-image">
+                        <span class="product-tag">BESTSELLER</span>
+                        <img src="/Assets/Shirt.webp" alt="Classic green shirt">
+                    </a>
+                    <div class="product-details">
+                        <div>
+                            <p class="product-category">MEN / SHIRTS</p>
+                            <h3>Classic Oxford Shirt</h3>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>₦25,000</strong>
+                            <button class="add-button" data-name="Classic Oxford Shirt" data-price="25000">Add to bag
+                                <span>+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="trousers">
+                    <a href="products.html" class="product-image">
+                        <img src="/Assets/Trouser.jfif" alt="Tailored trousers">
+                    </a>
+                    <div class="product-details">
+                        <div>
+                            <p class="product-category">MEN / TROUSERS</p>
+                            <h3>Tailored Trousers</h3>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>₦40,000</strong>
+                            <button class="add-button" data-name="Tailored Trousers" data-price="40000">Add to bag
+                                <span>+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shoes">
+                    <a href="products.html" class="product-image">
+                        <span class="product-tag">NEW</span>
+                        <img src="/Assets/Sneakers.webp" alt="Modern sneakers">
+                    </a>
+                    <div class="product-details">
+                        <div>
+                            <p class="product-category">UNISEX / SHOES</p>
+                            <h3>City Runner Sneakers</h3>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>₦70,000</strong>
+                            <button class="add-button" data-name="City Runner Sneakers" data-price="70000">Add to bag
+                                <span>+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="women">
+                    <a href="products.html" class="product-image">
+                        <img src="Assets/Midi dress.jfif" alt="Elegant women's dress">
+                    </a>
+                    <div class="product-details">
+                        <div>
+                            <p class="product-category">WOMEN / DRESSES</p>
+                            <h3>Evening Midi Dress</h3>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>₦40,000</strong>
+                            <button class="add-button" data-name="Evening Midi Dress" data-price="40000">Add to bag
+                                <span>+</span></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="editorial" id="story">
+            <div class="editorial-image"></div>
+            <div class="editorial-copy">
+                <p class="eyebrow">02 / OUR PHILOSOPHY</p>
+                <h2>Less noise.<br><em>More style.</em></h2>
+                <p>Urban Style is built around a simple idea: getting dressed should feel effortless. We combine
+                    timeless foundations with modern details so you can create a look that is unmistakably yours.</p>
+                <a class="button button-dark" href="contact.html">Meet Urban Style <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="benefits section">
+            <div class="section-heading centered">
+                <p class="eyebrow dark">WHY URBAN STYLE</p>
+                <h2>Made for real life.</h2>
+            </div>
+            <div class="benefit-grid">
+                <div class="benefit">
+                    <span>01</span>
+                    <h3>Quality first</h3>
+                    <p>Carefully selected materials and finishes that feel good and last.</p>
+                </div>
+                <div class="benefit">
+                    <span>02</span>
+                    <h3>Easy to wear</h3>
+                    <p>Versatile pieces designed to work together without overthinking it.</p>
+                </div>
+                <div class="benefit">
+                    <span>03</span>
+                    <h3>Made for you</h3>
+                    <p>Styles for different moods, moments, sizes and personal expression.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="statement">
+            <div class="statement-inner">
+                <p class="eyebrow">YOUR EVERYDAY UNIFORM</p>
+                <h2>Own the room<br><em>without saying a word.</em></h2>
+                <a class="button button-light" href="products.html">Shop the edit <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="reviews section" id="reviews">
+            <div class="section-top">
+                <div>
+                    <p class="eyebrow dark">03 / CUSTOMER LOVE</p>
+                    <h2>What they say</h2>
+                </div>
+            </div>
+
+            <div class="review-grid">
+                <blockquote>
+                    <div class="stars">★★★★★</div>
+                    <p>“The quality surprised me. Everything feels premium and the fit is exactly what I wanted.”</p>
+                    <footer>— Daniel A.</footer>
+                </blockquote>
+                <blockquote>
+                    <div class="stars">★★★★★</div>
+                    <p>“Urban Style has become my go-to. Simple pieces, great colours and they actually look better in
+                        person.”</p>
+                    <footer>— Amaka O.</footer>
+                </blockquote>
+                <blockquote>
+                    <div class="stars">★★★★★</div>
+                    <p>“Fast service and beautiful packaging. It genuinely feels like buying from a proper fashion
+                        brand.”</p>
+                    <footer>— Tobi K.</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div>
+                <p class="eyebrow">STAY IN THE LOOP</p>
+                <h2>First look.<br>First choice.</h2>
+            </div>
+            <form id="newsletterForm">
+                <label class="sr-only" for="email">Email address</label>
+                <input id="email" type="email" placeholder="Your email address" required>
+                <button type="submit">Join the list →</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="brand footer-logo" href="index.html"><span>URBAN</span> STYLE</a>
+                <p>Modern fashion for everyday confidence.</p>
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn
+                        ↗</a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://x.com/Ayodeleisnice">Twitter (X)</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a><a href="products.html">Collection</a><a href="about.html">Our Story</a><a
+                    href="reviews.html">Reviews</a>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <a href="contact.html">Contact</a><a href="checkout.html">Checkout</a><a href="products.html">Shop
+                    products</a>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@urbanstyle.com">hello@urbanstyle.com</a><span>Lagos, Nigeria</span><span>Mon — Sat
+                    / 9am — 6pm</span>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 Urban Style (Made by Adesanya Boluwatife Ayodele). All rights reserved.</span><span>Designed for modern
+                living.</span></div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+        <div class="cart-head">
+            <div>
+                <p class="eyebrow dark">YOUR BAG</p>
+                <h2>Shopping bag</h2>
+            </div>
+            <button id="closeCart" class="close-button" aria-label="Close shopping bag">×</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <div class="empty-cart">Your bag is waiting for something good.</div>
+        </div>
+        <div class="cart-foot">
+            <div><span>Subtotal</span><strong id="cartTotal">₦0</strong></div>
+            <a href="checkout.html" class="button button-dark full-button">Checkout <span>→</span></a>
+        </div>
+    </aside>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
