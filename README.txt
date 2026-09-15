@@ -8,7 +8,7 @@ Pages
 - contact.html     Contact page with social links
 - checkout.html    Checkout page
 - styles.css       Responsive visual design
-- script.js        Cart, filters, search, navigation and form interactions
+- script.js        Cart, filters, search, navigation and form interactions.
 
 
 SOCIAL LINKS
