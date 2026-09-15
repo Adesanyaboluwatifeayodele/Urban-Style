@@ -10,7 +10,6 @@ Pages
 - styles.css       Responsive visual design
 - script.js        Cart, filters, search, navigation and form interactions
 
-N
 
 SOCIAL LINKS
 Replace these placeholders in index.html, about.html, reviews.html, contact.html and the shared footer links:
