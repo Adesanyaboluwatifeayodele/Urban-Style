@@ -12,8 +12,6 @@ Pages
 
 
 SOCIAL LINKS
-Replace these placeholders in index.html, about.html, reviews.html, contact.html and the shared footer links:
 - Instagram: https://www.instagram.com/adesanyaboluwatifeayodele?stkn=djZ0c3ZhZnI1aWFo
 - LinkedIn:https://www.linkedin.com/in/adesanya-boluwatife-6464a2381
-- GitHub: https://github.com/drnm3024-hash
-
+- GitHub:https://github.com/Adesanyaboluwatifeayodele
